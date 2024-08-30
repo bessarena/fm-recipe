@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(14, 45%, 36%);
+  margin: 100px;
+  font-family: "Outfit";
+  background-color: hsl(30, 54%, 90%);
+}
+
+.back {
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 750px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+h1 {
+  color: hsl(24, 5%, 18%);
+}
+
+.ptitle {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+  font-size: large;
+}
+
+p, li {
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+}
+
+section {
+  background-color: hsl(330, 100%, 98%);
+  padding: 10px;
+  border: 1px solid hsl(330, 100%, 98%);
+  border-radius: 10px;
+}
+
+b {
+  font-weight: 700;
+}
+
+li {
+  padding: 8px;
+}
+
+th, td, tr {
+  border-bottom: 1px solid #ddd;
+}/*# sourceMappingURL=style.css.map */

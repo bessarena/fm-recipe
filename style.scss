@@ -1,0 +1,92 @@
+@mixin h-text {
+    font-weight: $w400;
+    font-family: $ffamily1;
+  }
+
+$white: hsl(0, 0%, 100%);
+
+$lltone: hsl(30, 54%, 90%);
+$lstone: hsl(30, 18%, 87%);
+$dstone: hsl(30, 10%, 34%);
+$ddstone: hsl(24, 5%, 18%);
+
+$brown: hsl(14, 45%, 36%);
+
+$drose: hsl(332, 51%, 32%);
+$lrose: hsl(330, 100%, 98%);
+
+$fsize: 16px;
+$ffamily1: "Young Serif";
+$ffamily2: "Outfit";
+$w400: 400;
+$w600: 600;
+$w700: 700;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    // border: 2px solid red;
+}
+
+
+
+body {
+    color: $brown;
+    margin: 100px;
+    font-family: $ffamily2;
+    background-color: $lltone;
+}
+
+.back {
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 750px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include h-text;
+}
+
+h1 {
+    color: $ddstone;
+}
+
+.ptitle {
+    color: $drose;
+    font-weight: $w700;
+    font-size: large;
+}
+
+p, li {
+    color: $dstone;
+    font-size: $fsize;
+}
+
+section {
+    background-color: $lrose;
+    padding: 10px;
+    border: 1px solid $lrose;
+    border-radius: 10px;
+}
+
+b {
+    font-weight: $w700;
+}
+
+li {
+    padding: 8px;
+}
+
+th, td, tr {
+    border-bottom: 1px solid #ddd;
+}
